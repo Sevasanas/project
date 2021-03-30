@@ -14,21 +14,29 @@
 
 <body>
     <header class="header">
-        <img src="./img/logo.svg" alt="logo" width="44" height="38">
-        <img src="./img/search.svg" alt="search" width="26" height="27">
-        <button><img src="./img/burger.svg" alt="burger" width="32" height="23"></button>
-        <a href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
-        <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
-        <nav>
-            <h2>menu</h2>
-            <ul>
-                <li>
-                    <a href="#">man</a>
-                    <ul>
-                        <li>Accessories</li>
-                        <li>Bags</li>
-                        <li>Denim</li>
-                        <li>T-Shirts</li>
+        <div class="container header__container">
+            <div>
+                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <img src="./img/search.svg" alt="search" width="26" height="27">
+            </div>
+            <div>
+                <button type="button" class="header__button">
+                    <img src="./img/burger.svg" alt="burger" width="32" height="23">
+                </button>
+                <a class="header__link" href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
+                <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+            </div>
+        </div>
+        <nav class="header__navigation">
+            <h2 class="header__title">menu</h2>
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a class="header__sub-title" href="#">man</a>
+                    <ul class="header__sub-navigation-list">
+                        <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Bags</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Denim</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
                     </ul>
                 </li>
                 <li>
@@ -56,27 +64,31 @@
         </nav>
     </header>
     <main>
-        <section>
-            man-img
-            <h1>the brand of luxerious fashion</h1>
+        <section class="brand">
+            <img class="brand__img" src="./img/man_main.jpg" alt="man" width="800" height="765">
+            <div class="brand__title-container">
+                <h1 class="brand__title">the brand <span class="brand__sub-title">of luxerious
+                        <span class="brand__pink-sub-title">fashion</span></span></h1>
+            </div>
+
         </section>
-        <section>
-            <h2>promotions</h2>
-            <ul>
-                <li>
-                    <h3>30 off</h3>
+        <section class="promotions container">
+            <h2 class="visually-hidden">promotions</h2>
+            <ul class="promotion__list">
+                <li class="promotion__item">
+                    <h3 class="promotion__title">30 off</h3>
                     <p>for women</p>
                 </li>
-                <li>
-                    <h3>hot deal</h3>
+                <li class="promotion__item">
+                    <h3 class="promotion__title">hot deal</h3>
                     <p>for men</p>
                 </li>
-                <li>
-                    <h3>new arrivals</h3>
+                <li class="promotion__item">
+                    <h3 class="promotion__title">new arrivals</h3>
                     <p>for kids</p>
                 </li>
-                <li>
-                    <h3>luxirous & trendy</h3>
+                <li class="promotion__item">
+                    <h3 class="promotion__title">luxirous & trendy</h3>
                     <p>accesories</p>
                 </li>
             </ul>
