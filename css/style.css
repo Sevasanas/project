@@ -4,13 +4,13 @@
     --white-color: #FFFFFF;
     --pink-color: #F1E4E6;
     --dark-pink-color: #F16D7F;
-    --bright-pink-color:  #F26376;
+    --bright-pink-color: #F26376;
     --grey-color: #F8F8F8;
     --grey-light-color: #E8E8E8;
     --dark-grey-color: #5D5D5D;
     --light-beige-color: #FBFBFB;
     --middle-grey-color: #E1E1E1;
-    --bright-grey-color:  #9F9F9F;
+    --bright-grey-color: #9F9F9F;
 }
 
 body {
@@ -122,7 +122,7 @@ body {
 .promotion__item--woman {
     background-image: url(../img/woman-30.jpg);
     background-size: cover;
-   
+
 }
 
 .promotion__item--man {
@@ -142,7 +142,7 @@ body {
 }
 
 .promotion__description {
-    padding:105px 103px ;
+    padding: 105px 103px;
 }
 
 .promotion__title {
@@ -158,7 +158,7 @@ body {
     font-weight: 700;
     line-height: 29px;
     text-transform: uppercase;
-    color: var(--dark-pink-color);  
+    color: var(--dark-pink-color);
 }
 
 
@@ -227,6 +227,7 @@ body {
     line-height: 19px;
     color: var(--dark-pink-color);
 }
+
 .product__button {
     display: none;
 }
@@ -246,29 +247,25 @@ body {
 .information {
     background-color: var(--antracite-grey-color);
     background-size: cover;
+    text-align: center;
 }
 
-.information__container {
+.information__list {
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 341px;
-}
-
-.information__list {
     list-style-type: none;
-    display: flex;
-    align-items: center;
+    margin-left: -230px;
+    margin-right: -230px;
 }
 
 .information__item {
-    padding-top: 29px;
-    padding-right: 30px;
-
+    width: 100%;
 }
 
 .information__img {
-  margin: 103px 347px 28px 388px;
+    margin: 103px 347px 28px 388px;
 }
 
 .information__title {
@@ -290,12 +287,12 @@ body {
 }
 
 .subscribe {
-    background-image: 
+    background-image: url(../img/subscribe.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.subscribe__container{
+.subscribe__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -320,7 +317,7 @@ body {
     text-align: center;
 }
 
-.subscribe__text-italic{
+.subscribe__text-italic {
     font-size: 20px;
     font-style: italic;
     font-weight: 400;
@@ -337,7 +334,7 @@ body {
     text-transform: uppercase;
     margin: 150px 230px 10px 340px;
     display: block;
-    
+
 }
 
 .subscribe__title-new {
@@ -416,4 +413,3 @@ body {
     border: 2px solid white;
     background-color: white;
 }
-
