@@ -249,25 +249,26 @@ body {
 }
 
 .information__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     min-height: 341px;
 }
 
 .information__list {
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 104px 230px;
-    
 }
 
 .information__item {
     padding-top: 29px;
     padding-right: 30px;
+
 }
 
 .information__img {
-  
+  margin: 103px 347px 28px 388px;
 }
 
 .information__title {
@@ -276,6 +277,7 @@ body {
     line-height: 24px;
     color: var(--light-beige-color);
     text-align: center;
+    margin: 28px 255px 16px 347px;
 }
 
 .information__text {
@@ -284,18 +286,25 @@ body {
     line-height: 17px;
     color: var(--light-beige-color);
     text-align: center;
+    margin: 16px 30px 104px 230px;
 }
 
 .subscribe {
     background-image: 
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.subscribe__container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     min-height: 448px;
 }
 
+.subscribe__citation {
+    flex-wrap: wrap;
+}
 
 .subscribe__img {
     border-radius: 90%;
@@ -319,10 +328,6 @@ body {
     color: var(--antracite-grey-color);
 }
 
-.subscribe__form {
-    
-}
-
 .subscribe__title {
     font-size: 30px;
     font-weight: 700;
@@ -330,6 +335,8 @@ body {
     font-weight: bold;
     color: var(--antracite-grey-color);
     text-transform: uppercase;
+    margin: 150px 230px 10px 340px;
+    display: block;
     
 }
 
@@ -342,17 +349,20 @@ body {
     display: block;
 }
 
+.form {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 10px 360px 156px 327px;
+}
+
 .subscribe__send {
     width: 323px;
     height: 49px;
     top: 243px;
     background-color: var(--middle-grey-color);
     padding: 7px 64px 6px 22px;
-    outline: none;
     border-style: none;
-    display: inline-block;
-    font-size: 20px;
-    box-sizing: border-box;
+    outline: none;
     border-radius: 25px 0 0 25px;
 }
 
@@ -360,15 +370,15 @@ body {
     width: 100px;
     height: 49px;
     top: 243px;
-    margin-left: -70px;
+    margin-left: -20px;
     font-size: 14px;
     font-weight: 400;
-    line-height: 17px;
+    border-style: none;
+    outline: none;
+    padding: 7px 7px 6px 8px;
     color: var(--white-color);
     background-color: var(--dark-pink-color);
     border-radius: 0 25px 25px 0;
-    
-    
 }
 
 .social {
