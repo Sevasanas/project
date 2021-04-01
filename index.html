@@ -76,35 +76,43 @@
             <h2 class="visually-hidden">promotions</h2>
             <ul class="promotion__list">
                 <li class="promotion__item promotion__item--woman">
-                    <h3 class="promotion__title">30% off</h3>
-                    <p class="promotion__text">for women</p>
+                    <div class="promotion__description">
+                        <h3 class="promotion__title">30% off</h3>
+                        <p class="promotion__text">for women</p>
+                    </div>
                 </li>
                 <li class="promotion__item promotion__item--man">
-                    <h3 class="promotion__title">hot deal</h3>
-                    <p class="promotion__text">for men</p>
+                    <div class="promotion__description">
+                        <h3 class="promotion__title">hot deal</h3>
+                        <p class="promotion__text">for men</p>
+                    </div>
                 </li>
                 <li class="promotion__item promotion__item--kids">
-                    <h3 class="promotion__title">new arrivals</h3>
-                    <p class="promotion__text">for kids</p>
+                    <div class="promotion__description">
+                        <h3 class="promotion__title">new arrivals</h3>
+                        <p class="promotion__text">for kids</p>
+                    </div>
                 </li>
                 <li class="promotion__item promotion__item--accesories">
-                    <h3 class="promotion__title">luxirous & trendy</h3>
-                    <p class="promotion__text">accesories</p>
+                    <div class="promotion__description">
+                        <h3 class="promotion__title">luxirous & trendy</h3>
+                        <p class="promotion__text">accesories</p>
+                    </div>
                 </li>
             </ul>
         </section>
         <section class="products container">
-            <h2 class="products__title">Fetured Items</h2>
-            <p class="products__text">Shop for items based on what we featured in this week</p>
+            <div class="products__description">
+                <h2 class="products__title">Fetured Items</h2>
+                <p class="products__text">Shop for items based on what we featured in this week</p>
+            </div>
             <ul class="products__list">
                 <li class="products__item product">
                     <img class="product__img" src="./img/man_capsule-1.jpg" alt="man" width="360" height="420">
                     <div class="product__description">
                         <h3 class="product__title">ellery x m'o capsule</h3>
                         <p class="product__text">Known for her sculptural takes on traditional tailoring, Australian
-                            arbiter
-                            of cool Kym Ellery
-                            teams up with Moda Operandi.</p>
+                            arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
                         <p class="product__price">$52.00</p>
                         <button type="button" class="product__button">Add to cart</button>
                     </div>
@@ -200,26 +208,32 @@
     </main>
     <footer>
         <div class="subscribe">
-            <img class="subscribe__img" src="./img/woman_subscribe.jpg" alt="woman" width="145" height="151">
-            <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-                <span class="subscribe__text-italic">a pulvinar purus condimentum“</span>
-            </p>
-            <h2 class="subscribe__title">subscribe
-                <span class="subscribe__title-new">for our newletter and promotion</span>
-            </h2>
-            <input class="subscribe__send" type="email" placeholder="Enter Your Email">
-            <button class="subscribe__button" type="submit">Subscribe</button>
+            <div>
+                <img class="subscribe__img" src="./img/woman_subscribe.jpg" alt="woman" width="145" height="151">
+                <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+                    <span class="subscribe__text-italic">a pulvinar purus condimentum“</span>
+                </p>
+            </div>
+            <div class="subscribe__form">
+                <h2 class="subscribe__title">subscribe
+                    <span class="subscribe__title-new">for our newletter and promotion</span>
+                </h2>
+                <form>
+                    <input class="subscribe__send" type="email" placeholder="Enter Your Email">
+                    <button class="subscribe__button" type="submit">Subscribe</button>
+                </form>
+            </div>
         </div>
         <div class="social">
             <p class="copy">© 2021 Brand All Rights Reserved.</p>
-            <ul class="social__link">
-                <li class="social__img"><a href="#">
+            <ul class="social__list">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
                         <img src="./img/facebook.svg" alt="facebook" width="32" height="32"></a></li>
-                <li class="social__img"><a href="#">
-                        <img src="./img/insta.svg" alt="insta" width="32" height="32"></a></li>
-                <li class="social__img"><a href="#">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
+                        <img src="./img/insta.svg" alt="instagram" width="32" height="32"></a></li>
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
                         <img src="./img/pinterest.svg" alt="pinterest" width="32" height="32"></a></li>
-                <li class="social__img"><a href="#">
+                <li class="social__item"><a class="social__link" href="#" target="_blank">
                         <img src="./img/twitter.svg" alt="twitter" width="32" height="32"></a></li>
             </ul>
         </div>
