@@ -100,13 +100,10 @@ body {
 }
 
 .promotion__list {
-    margin: 0 0 63px;
-}
-
-.promotion__list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin: 0 0 63px;
 }
 
 .promotion__item {
@@ -256,16 +253,6 @@ body {
     align-items: center;
     min-height: 341px;
     list-style-type: none;
-    margin-left: -230px;
-    margin-right: -230px;
-}
-
-.information__item {
-    width: 100%;
-}
-
-.information__img {
-    margin: 103px 347px 28px 388px;
 }
 
 .information__title {
@@ -274,7 +261,7 @@ body {
     line-height: 24px;
     color: var(--light-beige-color);
     text-align: center;
-    margin: 28px 255px 16px 347px;
+
 }
 
 .information__text {
@@ -283,29 +270,33 @@ body {
     line-height: 17px;
     color: var(--light-beige-color);
     text-align: center;
-    margin: 16px 30px 104px 230px;
+
 }
 
 .subscribe {
     background-image: url(../img/subscribe.png);
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.subscribe__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     min-height: 448px;
 }
 
-.subscribe__citation {
+.subscribe__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+}
+
+.subscribe__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .subscribe__img {
     border-radius: 90%;
-    margin: 87px 340px 20px 327px;
+    margin-top: 87px;
 }
 
 .subscribe__text {
@@ -313,7 +304,6 @@ body {
     font-weight: 400;
     line-height: 24px;
     color: var(--antracite-grey-color);
-    margin: 20px 327px 126px 230px;
     text-align: center;
 }
 
@@ -332,9 +322,9 @@ body {
     font-weight: bold;
     color: var(--antracite-grey-color);
     text-transform: uppercase;
-    margin: 150px 230px 10px 340px;
     display: block;
-
+    text-align: center;
+    margin-top: 150px;
 }
 
 .subscribe__title-new {
@@ -343,13 +333,13 @@ body {
     line-height: 40px;
     color: var(--antracite-grey-color);
     text-transform: uppercase;
+    text-align: center;
     display: block;
 }
 
 .form {
     display: inline-block;
     box-sizing: border-box;
-    margin: 10px 360px 156px 327px;
 }
 
 .subscribe__send {
