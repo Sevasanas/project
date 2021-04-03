@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <title>Registration</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <div>
+                <img class="header__logo" src="./img/logo.svg" alt="logo" width="44" height="38">
+                <img src="./img/search.svg" alt="search" width="26" height="27">
+            </div>
+            <div>
+                <button type="button" class="header__button">
+                    <img src="./img/burger.svg" alt="burger" width="32" height="23">
+                </button>
+                <a class="header__link" href="#"><img src="./img/person.svg" alt="person" width="29" height="29"></a>
+                <a href="#"><img src="./img/cart.svg" alt="cart" width="32" height="29"></a>
+            </div>
+        </div>
+        <nav class="header__navigation">
+            <h2 class="header__title">menu</h2>
+            <ul class="header__navigation-list">
+                <li class="header__navigation-item">
+                    <a class="header__sub-title" href="#">man</a>
+                    <ul class="header__sub-navigation-list">
+                        <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Bags</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Denim</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="header__sub-title" href="#">woman</a>
+                    <ul>
+                        <li><a href="#" class="header__sub-navigation-link">Accessories</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Jackets & Coats</a></li>
+                        <li> <a href="#" class="header__sub-navigation-link">Polos</a></li>
+                        <li> <a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                        <li> <a href="#" class="header__sub-navigation-link">Shirts</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="header__sub-title" href="#">kids</a>
+                    <ul>
+                        <li><a href="#">Accessories</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Jackets & Coats</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Polos</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">T-Shirts</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Shirts</a></li>
+                        <li><a href="#" class="header__sub-navigation-link">Bags</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="registration">
+            <h1 class="registration__title">Registration</h1>
+        </div>
+        <form action="" class="form">
+            <fieldset class="form__list">
+                <legend class="form__title">Your Name</legend>
+                <input class="form__field" type="text" placeholder="First Name">
+                <input class="form__field" type="text" placeholder="Last Name">
+                <input class="form__radio" type="radio">
+                <label class="form__label" for="ie">Male</label>
+                <input class="form__radio" type="radio">
+                <label class="form__label" for="ie">Female</label>
+            </fieldset>
+            <fieldset class="form__list">
+                <legend class="form__title">Login details</legend>
+                <input class="form__field" type="email" placeholder="Email">
+                <input class="form__field" type="password" name="" id="" placeholder="Password">
+                <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                <button class="form__button">join now</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+</html>
