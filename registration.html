@@ -63,26 +63,50 @@
     </header>
     <main>
         <div class="registration">
-            <h1 class="registration__title">Registration</h1>
+            <h1 class="registration__title container">Registration</h1>
         </div>
-        <form action="" class="form">
-            <fieldset class="form__list">
-                <legend class="form__title">Your Name</legend>
-                <input class="form__field" type="text" placeholder="First Name">
-                <input class="form__field" type="text" placeholder="Last Name">
-                <input class="form__radio" type="radio">
-                <label class="form__label" for="ie">Male</label>
-                <input class="form__radio" type="radio">
-                <label class="form__label" for="ie">Female</label>
-            </fieldset>
-            <fieldset class="form__list">
-                <legend class="form__title">Login details</legend>
-                <input class="form__field" type="email" placeholder="Email">
-                <input class="form__field" type="password" name="" id="" placeholder="Password">
-                <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
-                <button class="form__button">join now</button>
-            </fieldset>
-        </form>
+        <div class="filling__form">
+            <form action=" " class="form container">
+                <fieldset class="form__list">
+                    <legend class="form__title">Your Name</legend>
+                    <input class="form__field" type="text" placeholder="First Name">
+                    <input class="form__field" type="text" placeholder="Last Name">
+                    <div class="form__choice">
+                        <input class="form__radio" type="radio">
+                        <label class="form__label" for="ie">Male</label>
+                        <input class="form__radio" type="radio">
+                        <label class="form__label" for="ie">Female</label>
+                    </div>
+                    <legend class="form__title">Login details</legend>
+                    <input class="form__field" type="email" placeholder="Email">
+                    <input class="form__field" type="password" name="" id="" placeholder="Password">
+                    <p class="form__text">Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters</p>
+                    <a href="#" class="form__link">join now
+                        <img class="link__img" src="./img/arrow.svg" alt="Arrow" width="17" height="10">
+                    </a>
+                </fieldset>
+            </form>
+            <div class="loyalty container">
+                <h2 class="loyalty__title">loyalty has its perks</h2>
+                <ul class="loyalty__list">Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
+                    <li class="loyalty__item">
+                        <p class="loyalty__text">15% off welcome offer</p>
+                    </li>
+                    <li class="loyalty__item">
+                        <p>Free shipping, returns and exchanges on all orders</p>
+                    </li>
+                    <li class="loyalty__item">
+                        <p>$10 off a purchase on your birthday</p>
+                    </li>
+                    <li class="loyalty__item">
+                        <p>Early access to products</p>
+                    </li>
+                    <li class="loyalty__item">
+                        <p>Exclusive offers & rewards</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </main>
 </body>
 </html>

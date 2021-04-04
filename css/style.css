@@ -423,6 +423,16 @@ body {
     padding: 59px 1176px 60px 230px;
 }
 
+.filling__form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form {
+    width: 359px;
+}
+
 .form__list {
     border: none;
 }
@@ -441,7 +451,6 @@ body {
     top: 327px;
     left: 231px;
     font-size: 13px;
-    font-style: normal;
     font-weight: 300;
     line-height: 16px;
     text-align: left;
@@ -460,8 +469,8 @@ body {
 }
 
 .form__label ::before {
-    content ''
     position: absolute;
+    content: ' ';
     width: 17px;
     height: 17px;
     top: 467px;
@@ -475,4 +484,59 @@ body {
     display: block;
     background: var(--dark-grey-color);
     background-size: 10px 10px;
+}
+
+.form__text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 16px;
+    text-align: left;
+    color: var(--medium-grey-color);
+    margin-top: 16px;
+    margin-bottom: 39px;
+}
+
+.form__link {
+    width: 167px;
+    height: 50px;
+    color: white;
+    background-color: var(--dark-pink-color);
+    text-transform: uppercase;
+    padding: 16px 66px 17px 29px;
+    text-decoration: none;
+}
+
+.link__img {
+    padding-left: 20px;
+}
+
+.loyalty {
+    width: 652px;
+}
+
+.loyalty__title {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.loyalty__list {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 29px;
+    text-align: left;
+    list-style-type: none;
+
+}
+
+.loyalty__item::before {
+    content: url(../img/punkt.svg);
+}
+
+.loyalty__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
