@@ -339,15 +339,15 @@ body {
     display: block;
 }
 
-.form {
+.subscribe__form {
     display: inline-block;
+    display: flex;
     box-sizing: border-box;
 }
 
 .subscribe__send {
     width: 323px;
     height: 49px;
-    top: 243px;
     background-color: var(--middle-grey-color);
     padding: 7px 64px 6px 22px;
     border-style: none;
@@ -357,8 +357,7 @@ body {
 
 .subscribe__button {
     width: 100px;
-    height: 49px;
-    top: 243px;
+    height: 62px;
     margin-left: -20px;
     font-size: 14px;
     font-weight: 400;
@@ -420,21 +419,23 @@ body {
     text-align: left;
     color: var(--dark-pink-color);
     text-transform: uppercase;
-    padding: 59px 1176px 60px 230px;
+
 }
 
 .filling__form {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 }
 
 .form {
-    width: 359px;
+    margin-bottom: 120px;
 }
 
 .form__list {
     border: none;
+    margin-left: 63px;
 }
 
 .form__title {
@@ -443,13 +444,13 @@ body {
     line-height: 19px;
     text-align: left;
     color: var(--black-color);
+    margin-bottom: 21px;
 }
 
 .form__field {
-    width: 359px;
+    width: 230px;
     height: 44px;
     top: 327px;
-    left: 231px;
     font-size: 13px;
     font-weight: 300;
     line-height: 16px;
@@ -459,34 +460,38 @@ body {
     margin-bottom: 21px;
 }
 
+.form__choice {
+    position: relative;
+    margin-bottom: 35px;
+}
+
 .form__radio {
     display: none;
 }
 
 .form__label {
-    position: relative;
+
     margin: 20px;
 }
 
-.form__label ::before {
+.form__label::before {
     position: absolute;
     content: ' ';
     width: 17px;
     height: 17px;
-    top: 467px;
-    left: 231px;
     border: 1px solid #A4A4A4;
     border-radius: 50%;
+    background: var(--bright-grey-color);
+    background-size: 10px;
     display: none;
 }
 
-.form__radio:checked+.form__label::after {
+.form__radio :checked+.form__label ::after {
     display: block;
-    background: var(--dark-grey-color);
-    background-size: 10px 10px;
 }
 
 .form__text {
+    width: 359px;
     font-size: 13px;
     font-weight: 300;
     line-height: 16px;
@@ -511,7 +516,10 @@ body {
 }
 
 .loyalty {
-    width: 652px;
+
+    flex-grow: 1;
+    margin-top: 64px;
+    margin-bottom: 277px;
 }
 
 .loyalty__title {
@@ -528,7 +536,7 @@ body {
     line-height: 29px;
     text-align: left;
     list-style-type: none;
-
+    margin-bottom: 21px;
 }
 
 .loyalty__item::before {
@@ -539,4 +547,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.loyalty__text {
+    width: 556px;
+    text-align: left;
 }
