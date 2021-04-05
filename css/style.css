@@ -195,6 +195,24 @@ body {
     width: 360px;
 }
 
+.overlay {
+    width: 360px;
+    min-height: 420px;
+    background: rgba(58, 56, 56, 0.86);
+    position: absolute;
+    top: 1576px;
+}
+
+.overlay,
+.product__button {
+    display: none;
+}
+
+.products__item:hover .overlay,
+.products__item:hover .product__button {
+    display: block;
+}
+
 .product__img {
     display: block;
 }
@@ -228,7 +246,16 @@ body {
 }
 
 .product__button {
-    display: none;
+    position: relative;
+    width: 138px;
+    height: 43px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    text-align: center;
+    border-color: white;
+    color: var(--white-color);
+    background: transparent;
 }
 
 .products__button {
@@ -241,6 +268,11 @@ body {
     border-color: var(--bright-pink-color);
     margin-top: 49px;
     margin-bottom: 96px;
+}
+
+.products__button:hover {
+    color: var(--white-color);
+    background-color: var(--dark-pink-color);
 }
 
 .information {
@@ -419,7 +451,7 @@ body {
     text-align: left;
     color: var(--dark-pink-color);
     text-transform: uppercase;
-
+    padding-top: 59px;
 }
 
 .filling__form {
@@ -435,7 +467,7 @@ body {
 
 .form__list {
     border: none;
-    margin-left: 63px;
+
 }
 
 .form__title {
@@ -461,7 +493,6 @@ body {
 }
 
 .form__choice {
-    position: relative;
     margin-bottom: 35px;
 }
 
@@ -470,15 +501,17 @@ body {
 }
 
 .form__label {
-
     margin: 20px;
+    position: relative;
 }
 
 .form__label::before {
+    content: '';
     position: absolute;
-    content: ' ';
     width: 17px;
     height: 17px;
+    left: -20px;
+    top: -2px;
     border: 1px solid #A4A4A4;
     border-radius: 50%;
     background: var(--bright-grey-color);
@@ -528,6 +561,7 @@ body {
     line-height: 29px;
     text-align: left;
     text-transform: uppercase;
+    margin-left: 38px;
 }
 
 .loyalty__list {
@@ -536,17 +570,18 @@ body {
     line-height: 29px;
     text-align: left;
     list-style-type: none;
-    margin-bottom: 21px;
 }
 
 .loyalty__item::before {
     content: url(../img/punkt.svg);
+    padding-right: 24px;
 }
 
 .loyalty__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: -16px;
 }
 
 .loyalty__text {
