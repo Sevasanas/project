@@ -5,9 +5,7 @@
     margin: 0 auto;
 
     &__title {
-        font-size: 24px;
-        font-weight: 400;
-        line-height: 29px;
+        @include font(24px, 29px, 400);
         text-align: left;
         color: $dark-pink-color;
         text-transform: uppercase;

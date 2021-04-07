@@ -7,16 +7,12 @@
     }
 
     &__title {
-        font-size: 30px;
-        font-weight: 400;
-        line-height: 36px;
+        @include font(30px, 36px, 400);
         color: $black-color;
     }
 
     &__text {
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 17px;
+        @include font(14px, 17px, 400);
         color: $bright-grey-color;
     }
 
@@ -49,33 +45,25 @@
         }
 
         &__title {
-            font-size: 13px;
-            font-weight: 400;
-            line-height: 16px;
+            @include font(13px, 16px, 400);
             color: $black-color;
             text-transform: uppercase;
         }
 
         &__text {
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 17px;
+            @include font(14px, 17px, 300);
             color: $dark-grey-color;
         }
 
         &__price {
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
+            @include font(16px, 19px, 400);
             color: $dark-pink-color;
         }
 
         &__button {
             width: 138px;
             height: 43px;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
+            @include font(14px, 17px, 400);
             text-align: center;
             border-color: white;
             color: $white-color;
@@ -112,9 +100,7 @@
     &__button {
         width: 211px;
         height: 47px;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 19px;
+        @include font(16px, 19px, 400);
         color: $bright-pink-color;
         border-color: $bright-pink-color;
         margin-top: 49px;

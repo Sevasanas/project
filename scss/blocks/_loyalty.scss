@@ -4,18 +4,14 @@
     margin-bottom: 277px;
 
     &__title {
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 29px;
+        @include font(24px, 29px, 300);
         text-align: left;
         text-transform: uppercase;
         margin-left: 38px;
     }
 
     &__list {
-        font-size: 24px;
-        font-weight: 300;
-        line-height: 29px;
+        @include font(24px, 29px, 300);
         text-align: left;
         list-style-type: none;
     }

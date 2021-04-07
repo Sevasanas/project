@@ -175,16 +175,25 @@ body {
   margin: 0 41px 0 0;
 }
 
-.header__form-search::before {
-  content: '';
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 20px;
-  left: 10px;
+.header__form-search {
+  position: relative;
 }
 
-.header__search-icon:hover .header__form-search {
+.header__search:hover .header__form-search::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 20px;
+  left: 10px;
+  background-size: 10px 10px;
+}
+
+.header__form-search {
+  display: none;
+}
+
+.header__search-icon:hover .header__search {
   display: block;
 }
 
@@ -227,15 +236,15 @@ body {
 
 .brand__title {
   font-size: 48px;
-  font-weight: 900;
   line-height: 58px;
+  font-weight: 900;
   text-transform: uppercase;
 }
 
 .brand__sub-title {
   font-size: 32px;
-  font-weight: 700;
   line-height: 38px;
+  font-weight: 700;
   display: block;
 }
 
@@ -287,16 +296,16 @@ body {
 
 .promotion__title {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
 .promotion__text {
   font-size: 24px;
-  font-weight: 700;
   line-height: 29px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #F16D7F;
 }
@@ -312,15 +321,15 @@ body {
 
 .products__title {
   font-size: 30px;
-  font-weight: 400;
   line-height: 36px;
+  font-weight: 400;
   color: #222222;
 }
 
 .products__text {
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
   color: #9F9F9F;
 }
 
@@ -353,23 +362,23 @@ body {
 
 .products .product__title {
   font-size: 13px;
-  font-weight: 400;
   line-height: 16px;
+  font-weight: 400;
   color: #222222;
   text-transform: uppercase;
 }
 
 .products .product__text {
   font-size: 14px;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
   color: #5D5D5D;
 }
 
 .products .product__price {
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
   color: #F16D7F;
 }
 
@@ -377,8 +386,8 @@ body {
   width: 138px;
   height: 43px;
   font-size: 14px;
-  font-weight: 400;
   line-height: 17px;
+  font-weight: 400;
   text-align: center;
   border-color: white;
   color: #FFFFFF;
@@ -411,8 +420,8 @@ body {
   width: 211px;
   height: 47px;
   font-size: 16px;
-  font-weight: 400;
   line-height: 19px;
+  font-weight: 400;
   color: #F26376;
   border-color: #F26376;
   margin-top: 49px;
@@ -438,18 +447,22 @@ body {
   list-style-type: none;
 }
 
+.information__img {
+  fill: #F16D7F;
+}
+
 .information__title {
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
   color: #FBFBFB;
   text-align: center;
 }
 
 .information__text {
   font-size: 14px;
-  font-weight: 300;
   line-height: 17px;
+  font-weight: 300;
   color: #FBFBFB;
   text-align: center;
 }
@@ -482,24 +495,24 @@ body {
 
 .subscribe__text {
   font-size: 20px;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
   color: #222224;
   text-align: center;
 }
 
 .subscribe__text-italic {
   font-size: 20px;
-  font-style: italic;
-  font-weight: 400;
   line-height: 24px;
+  font-weight: 400;
+  font-style: italic;
   color: #222224;
 }
 
 .subscribe__title {
   font-size: 30px;
-  font-weight: 700;
   line-height: 40px;
+  font-weight: 700;
   font-weight: bold;
   color: #222224;
   text-transform: uppercase;
@@ -510,8 +523,8 @@ body {
 
 .subscribe__title-new {
   font-size: 24px;
-  font-weight: 400;
   line-height: 40px;
+  font-weight: 400;
   color: #222224;
   text-transform: uppercase;
   text-align: center;
@@ -620,8 +633,8 @@ body {
 
 .registration__title {
   font-size: 24px;
-  font-weight: 400;
   line-height: 29px;
+  font-weight: 400;
   text-align: left;
   color: #F16D7F;
   text-transform: uppercase;
@@ -644,8 +657,8 @@ body {
 
 .form__title {
   font-size: 16px;
-  font-weight: 300;
   line-height: 19px;
+  font-weight: 300;
   text-align: left;
   color: #222222;
   margin-bottom: 21px;
@@ -698,8 +711,8 @@ body {
 .form__text {
   width: 359px;
   font-size: 13px;
-  font-weight: 300;
   line-height: 16px;
+  font-weight: 300;
   text-align: left;
   color: #B1B1B1;
   margin-top: 16px;
@@ -730,8 +743,8 @@ body {
 
 .loyalty__title {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
   text-align: left;
   text-transform: uppercase;
   margin-left: 38px;
@@ -739,8 +752,8 @@ body {
 
 .loyalty__list {
   font-size: 24px;
-  font-weight: 300;
   line-height: 29px;
+  font-weight: 300;
   text-align: left;
   list-style-type: none;
 }

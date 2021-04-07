@@ -11,19 +11,19 @@
         list-style-type: none;
     }
 
+    &__img {
+        fill: $dark-pink-color;
+    }
+
     &__title {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 24px;
+        @include font(20px, 24px, 400);
         color: $light-beige-color;
         text-align: center;
 
     }
 
     &__text {
-        font-size: 14px;
-        font-weight: 300;
-        line-height: 17px;
+        @include font(14px, 17px, 300);
         color: $light-beige-color;
         text-align: center;
 

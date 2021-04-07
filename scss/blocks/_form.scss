@@ -13,9 +13,7 @@
     }
 
     &__title {
-        font-size: 16px;
-        font-weight: 300;
-        line-height: 19px;
+        @include font(16px, 19px, 300);
         text-align: left;
         color: $black-color;
         margin-bottom: 21px;
@@ -68,9 +66,7 @@
 
     &__text {
         width: 359px;
-        font-size: 13px;
-        font-weight: 300;
-        line-height: 16px;
+        @include font(13px, 16px, 300);
         text-align: left;
         color: $medium-grey-color;
         margin-top: 16px;
