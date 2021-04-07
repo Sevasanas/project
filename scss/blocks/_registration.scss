@@ -1,0 +1,16 @@
+.registration {
+    max-width: 1600px;
+    min-height: 148px;
+    background-color: $light-pink-color;
+    margin: 0 auto;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        text-align: left;
+        color: $dark-pink-color;
+        text-transform: uppercase;
+        padding-top: 59px;
+    }
+}

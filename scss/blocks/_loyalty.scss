@@ -1,0 +1,39 @@
+.loyalty {
+    flex-grow: 1;
+    margin-top: 64px;
+    margin-bottom: 277px;
+
+    &__title {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        text-align: left;
+        text-transform: uppercase;
+        margin-left: 38px;
+    }
+
+    &__list {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+        text-align: left;
+        list-style-type: none;
+    }
+
+    &__item::before {
+        content: url(../img/punkt.svg);
+        padding-right: 24px;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -16px;
+    }
+
+    &__text {
+        width: 556px;
+        text-align: left;
+    }
+}

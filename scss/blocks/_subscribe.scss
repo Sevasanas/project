@@ -1,0 +1,93 @@
+.subscribe {
+    background-image: url(../img/subscribe.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 448px;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style-type: none;
+    }
+
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__img {
+        border-radius: 90%;
+        margin-top: 87px;
+    }
+
+    &__text {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        color: $antracite-grey-color;
+        text-align: center;
+    }
+
+    &__text-italic {
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 24px;
+        color: $antracite-grey-color;
+    }
+
+    &__title {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 40px;
+        font-weight: bold;
+        color: $antracite-grey-color;
+        text-transform: uppercase;
+        display: block;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    &__title-new {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 40px;
+        color: $antracite-grey-color;
+        text-transform: uppercase;
+        text-align: center;
+        display: block;
+    }
+
+    &__form {
+        display: inline-block;
+        display: flex;
+        box-sizing: border-box;
+    }
+
+    &__send {
+        width: 323px;
+        height: 49px;
+        background-color: $middle-grey-color;
+        padding: 7px 64px 6px 22px;
+        border-style: none;
+        outline: none;
+        border-radius: 25px 0 0 25px;
+    }
+
+    &__button {
+        width: 100px;
+        height: 62px;
+        margin-left: -20px;
+        font-size: 14px;
+        font-weight: 400;
+        border-style: none;
+        outline: none;
+        padding: 7px 7px 6px 8px;
+        color: $white-color;
+        background-color: $dark-pink-color;
+        border-radius: 0 25px 25px 0;
+    }
+}

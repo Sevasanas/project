@@ -1,0 +1,62 @@
+.social {
+    background-color: $antracite-grey-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 79px;
+
+    .copy {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: $light-beige-color;
+        margin-left: 235px;
+    }
+
+    &__list {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        margin-right: 230px;
+    }
+
+    &__item {
+        margin-right: 7px;
+    }
+
+    &__item-icon {
+        fill: $black-color;
+    }
+
+    .facebook {
+        padding: 8px 9px 11px 11px;
+    }
+
+    .instagram {
+        padding: 9px 8px 8px 8px;
+    }
+
+    .pinterest {
+        padding: 8px 8px 9px 10px;
+    }
+
+    .twitter {
+        padding: 10px 10px 7px 8px;
+    }
+
+    &__link {
+        display: block;
+        width: 32px;
+        height: 32px;
+        border: 2px solid white;
+        background-color: white;
+    }
+
+    &__link:hover {
+        background-color: $dark-pink-color;
+    }
+
+    &__item-icon:hover {
+        fill: $white-color;
+    }
+}
