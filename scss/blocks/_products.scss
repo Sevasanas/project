@@ -25,6 +25,7 @@
 
     &__item {
         width: 360px;
+        position: relative;
     }
 
     .product {
@@ -71,44 +72,35 @@
         }
 
         .overlay {
-            position: relative;
-        }
-
-        .overlay::before {
             position: absolute;
-            content: '';
-            width: 360px;
-            min-height: 420px;
-            background: rgba(58, 56, 56, 0.86);
-            top: 1576px;
         }
 
         .overlay,
-        &__button {
+        & {
             display: none;
         }
+
+        .products__item:hover .overlay,
+        .products__item:hover .product__button {
+            display: block;
+        }
+
+        &____button-icon {
+            fill: $white-color;
+        }
+
+        &__button {
+            width: 211px;
+            height: 47px;
+            @include font(16px, 19px, 400);
+            color: $bright-pink-color;
+            border-color: $bright-pink-color;
+            margin-top: 49px;
+            margin-bottom: 96px;
+        }
+
+        &__button:hover {
+            color: $white-color;
+            background-color: $dark-pink-color;
+        }
     }
-
-
-    &__item:hover .overlay,
-    &__item:hover .product__button {
-        display: block;
-    }
-
-
-
-    &__button {
-        width: 211px;
-        height: 47px;
-        @include font(16px, 19px, 400);
-        color: $bright-pink-color;
-        border-color: $bright-pink-color;
-        margin-top: 49px;
-        margin-bottom: 96px;
-    }
-
-    &__button:hover {
-        color: $white-color;
-        background-color: $dark-pink-color;
-    }
-}

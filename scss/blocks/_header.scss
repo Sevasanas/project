@@ -1,5 +1,6 @@
 .header {
     background-color: $black-color;
+    position: relative;
 
     &__navigation {
         display: none;
@@ -20,7 +21,7 @@
         position: relative;
     }
 
-    &__search:hover .header__form-search::before {
+    &__search:hover+.header__form-search::before {
         content: '';
         position: absolute;
         width: 10px;
@@ -42,9 +43,18 @@
         border: none;
         margin: 0 33px 0 0;
 
+        &:hover+.header__navigation {
+            display: block;
+        }
+
         &:hover .header__button-icon {
             fill: $dark-pink-color;
         }
+    }
+
+    &__navigation {
+        background-color: $white-color;
+        position: absolute;
     }
 
     &__link {
