@@ -1,0 +1,31 @@
+.information {
+    background-color: $antracite-grey-color;
+    background-size: cover;
+    text-align: center;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 341px;
+        list-style-type: none;
+    }
+
+    &__img {
+        fill: $dark-pink-color;
+    }
+
+    &__title {
+        @include font(20px, 24px, 400);
+        color: $light-beige-color;
+        text-align: center;
+
+    }
+
+    &__text {
+        @include font(14px, 17px, 300);
+        color: $light-beige-color;
+        text-align: center;
+
+    }
+}

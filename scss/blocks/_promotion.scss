@@ -1,0 +1,57 @@
+.promotion {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 0 63px;
+    }
+
+    &__item {
+        width: 360px;
+        min-height: 260px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 30px;
+        text-align: center;
+    }
+
+    &__item--woman {
+        background-image: url(../img/woman-30.jpg);
+        background-size: cover;
+
+    }
+
+    &__item--man {
+        background-image: url(../img/man-30.jpg);
+        background-size: cover;
+    }
+
+    &__item--kids {
+        background-image: url(../img/kids-30.jpg);
+        background-size: cover;
+    }
+
+    &__item--accesories {
+        background-image: url(../img/accesories.jpg);
+        background-size: cover;
+        width: 100%;
+    }
+
+    &__description {
+        padding: 105px 103px;
+    }
+
+    &__title {
+        @include font(16px, 19px, 400);
+        text-transform: uppercase;
+        color: $white-color;
+    }
+
+    &__text {
+        @include font(24px, 29px, 700);
+        text-transform: uppercase;
+        color: $dark-pink-color;
+    }
+
+}
