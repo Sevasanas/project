@@ -921,10 +921,22 @@ body {
   padding-top: 59px;
 }
 
+@media (max-width: 375px) {
+  .registration__title {
+    text-align: center;
+  }
+}
+
 .form {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 375px) {
+  .form {
+    flex-direction: column;
+  }
 }
 
 .form__filling {
@@ -945,7 +957,7 @@ body {
 }
 
 .form__field {
-  width: 230px;
+  width: 36%;
   height: 44px;
   top: 327px;
   font-size: 13px;
@@ -955,6 +967,13 @@ body {
   color: #B1B1B1;
   padding: 13px 274px 16px 17px;
   margin-bottom: 21px;
+}
+
+@media (max-width: 375px) {
+  .form__field {
+    top: 301px;
+    padding: 12px 276px 15px 17px;
+  }
 }
 
 .form__choice {
@@ -1030,6 +1049,14 @@ body {
   margin-left: 38px;
 }
 
+@media (max-width: 768px) {
+  .loyalty__title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
+}
+
 .loyalty__list {
   font-size: 24px;
   line-height: 29px;
@@ -1051,8 +1078,16 @@ body {
 }
 
 .loyalty__text {
-  width: 556px;
+  width: 49%;
   text-align: left;
+}
+
+@media (max-width: 768px) {
+  .loyalty__text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
 }
 
 .cart {

@@ -8,6 +8,10 @@
         text-align: left;
         text-transform: uppercase;
         margin-left: 38px;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
 
     &__list {
@@ -29,7 +33,11 @@
     }
 
     &__text {
-        width: 556px;
+        width: 49%;
         text-align: left;
+
+        @include tablet {
+            @include font(16px, 19px, 300);
+        }
     }
 }
