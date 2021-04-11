@@ -4,11 +4,19 @@
     background-size: cover;
     min-height: 448px;
 
+    @include tablet {
+        min-height: 693px;
+    }
+
     &__list {
         display: flex;
         justify-content: space-between;
         align-items: center;
         list-style-type: none;
+
+        @include tablet {
+            flex-direction: column;
+        }
     }
 
     &__item {
@@ -16,23 +24,40 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+
+        @include tablet {
+            flex-direction: column;
+            padding-bottom: 140px;
+        }
     }
 
     &__img {
         border-radius: 90%;
         margin-top: 87px;
+
+        @include tablet {
+            padding-bottom: 27px;
+        }
     }
 
     &__text {
         @include font(20px, 24px, 400);
         color: $antracite-grey-color;
         text-align: center;
+
+        @include mobile {
+            @include font(19px, 22px)
+        }
     }
 
     &__text-italic {
         @include font(20px, 24px, 400);
         font-style: italic;
         color: $antracite-grey-color;
+    }
+
+    @include mobile {
+        @include font(18px, 21px)
     }
 
     &__title {
@@ -43,6 +68,14 @@
         display: block;
         text-align: center;
         margin-top: 150px;
+
+        @include tablet {
+            @include font(18px, 29px, 700)
+        }
+
+        @include mobile {
+            @include font(24px, 36px)
+        }
     }
 
     &__title-new {
@@ -51,6 +84,15 @@
         text-transform: uppercase;
         text-align: center;
         display: block;
+
+        @include tablet {
+            padding-bottom: 27px;
+            @include font(18px, 27px, normal)
+        }
+
+        @include mobile {
+            @include font(14px, 21px)
+        }
     }
 
     &__form {
@@ -67,6 +109,12 @@
         border-style: none;
         outline: none;
         border-radius: 25px 0 0 25px;
+
+        @include mobile {
+            width: 98%;
+            height: 46px;
+            padding: 6px 61px 6px 21px;
+        }
     }
 
     &__button {
@@ -81,5 +129,11 @@
         color: $white-color;
         background-color: $dark-pink-color;
         border-radius: 0 25px 25px 0;
+
+        @include mobile {
+            width: 93%;
+            height: 58px;
+            padding: 7px 7px 6px 8px;
+        }
     }
 }

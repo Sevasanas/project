@@ -67,6 +67,7 @@
         @include font(16px, 19px, 400);
         text-transform: uppercase;
         color: $white-color;
+        white-space: nowrap;
     }
 
     &__text {
