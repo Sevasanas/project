@@ -69,4 +69,20 @@
         fill: $grey-light-color;
     }
 
+    @media (max-width: 768px) {
+        .header {
+            padding: 0 16px;
+        }
+    }
+
+    @media (max-width: 375px) {
+        .header {
+            padding: 0 16px;
+
+            &__link {
+                display: none;
+            }
+
+        }
+    }
 }
