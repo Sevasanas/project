@@ -1,47 +1,79 @@
 .cart {
-    margin-top: 96px;
-    margin-left: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__product {
+        margin-top: 96px;
+        margin-left: 230px;
+    }
 
     &__position {
-        width: 390px;
-        height: 306px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-
+        margin-bottom: 40px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
         &-description {
+            width: 24%;
+            height: 306px;
+            position: relative;
             flex-direction: column;
         }
 
         &-title {
+            width: 262px;
+            height: 68px;
             @include font(24px, 29px, 400);
             text-transform: uppercase;
         }
 
+        &-list {
+            padding-bottom: 6px;
+        }
+
         &-item {
+            width: 122px;
             @include font(22px, 26px, 400);
-        }
+            flex-wrap: nowrap;
 
-        &-title-pink {
-            color: $dark-pink-color;
-        }
+            &-quantity {
+                width: 43px;
+                height: 24px;
+            }
 
-        &-close {
-            fill: $grey-soft-color;
+            &-title-pink {
+                color: $dark-pink-color;
+            }
+
+            &-close {
+                fill: $grey-soft-color;
+                position: absolute;
+                margin: 28px 22px 260px 350px;
+            }
         }
     }
 
     &__button {
+        width: 41%;
         @include font(14px, 17px, 300);
         text-transform: uppercase;
         padding: 17px 41px 16px 39px;
+        margin-top: 32px;
+        margin-bottom: 144px;
+        background-color: $white-color;
+        white-space: nowrap;
     }
 
     &__link {
+        width: 41%;
         @include font(14px, 17px, 300);
         text-transform: uppercase;
         padding: 17px 41px 16px 39px;
+        text-decoration: none;
+        color: $black-color;
+        border: 1px solid;
+        white-space: nowrap;
     }
-
 }

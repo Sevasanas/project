@@ -1,0 +1,35 @@
+.form__checkout {
+    width: 360px;
+    height: 214px;
+    background-color: $very-soft-grey-color;
+    margin-top: 58px;
+
+    &-text {
+        @include font(11px, 13px, 400);
+        text-transform: uppercase;
+        padding: 39px 34px 12px 218px;
+    }
+
+    &-text-big {
+        @include font(16px, 19px, 300);
+        text-transform: uppercase;
+        padding-left: 153px;
+    }
+
+    &-text-pink {
+        @include font(16px, 19px, 300);
+        text-transform: uppercase;
+        color: $dark-pink-color;
+    }
+
+    &-link {
+        width: 273px;
+        height: 50px;
+        background-color: $dark-pink-color;
+        padding: 15px 43px 16px 41px;
+        text-decoration: none;
+        color: $white-color;
+        text-transform: uppercase;
+        margin: 122px 43px 42px 44px;
+    }
+}
