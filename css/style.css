@@ -1194,6 +1194,7 @@ body {
   color: #222222;
   border: 1px solid;
   white-space: nowrap;
+  margin-right: 132px;
 }
 
 .form__cart {
