@@ -3,6 +3,11 @@
     justify-content: space-between;
     align-items: center;
 
+    @include mobile {
+        flex-direction: column;
+    }
+
+
     &__filling {
         margin-bottom: 120px;
     }
@@ -20,7 +25,7 @@
     }
 
     &__field {
-        width: 230px;
+        width: 36%;
         height: 44px;
         top: 327px;
         font-size: 13px;
@@ -30,6 +35,12 @@
         color: $medium-grey-color;
         padding: 13px 274px 16px 17px;
         margin-bottom: 21px;
+
+        @include mobile {
+            top: 301px;
+            padding: 12px 276px 15px 17px;
+
+        }
     }
 
     &__choice {

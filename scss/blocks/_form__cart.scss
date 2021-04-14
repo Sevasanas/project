@@ -1,3 +1,32 @@
 .form__cart {
     flex-direction: column;
+    margin-left: 129px;
+
+    &-form {
+        flex-direction: column;
+    }
+
+    &-title {
+        @include font(16px, 19px, 300);
+        text-transform: uppercase;
+        margin-bottom: 21px;
+    }
+
+    &-field {
+        width: 22%;
+        height: 45px;
+        padding: 12px 277px 16px 17px;
+        margin-bottom: 21px;
+    }
+
+    &-button {
+        width: 100px;
+        height: 34px;
+        @include font(11px, 13px, 300);
+        text-transform: uppercase;
+        padding: 10px 11px 13px 14px;
+        background-color: $white-color;
+        white-space: nowrap;
+        margin-top: 24px;
+    }
 }

@@ -9,6 +9,16 @@
         align-items: center;
         min-height: 341px;
         list-style-type: none;
+
+        @include tablet {
+            flex-direction: column;
+            padding-top: 48px;
+            padding-bottom: 64px;
+        }
+
+        @include mobile {
+            padding-bottom: 64px;
+        }
     }
 
     &__img {

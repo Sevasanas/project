@@ -1,18 +1,15 @@
-.registration {
+.shopping__cart {
     max-width: 1600px;
     min-height: 148px;
     background-color: $light-pink-color;
     margin: 0 auto;
 
-    &__title {
+    &-title {
         @include font(24px, 29px, 400);
         text-align: left;
         color: $dark-pink-color;
         text-transform: uppercase;
         padding-top: 59px;
-
-        @include mobile {
-            text-align: center;
-        }
+        margin-left: 230px;
     }
 }
