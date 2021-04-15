@@ -10963,6 +10963,7 @@ body {
 .products__item {
   width: 360px;
   position: relative;
+  margin-bottom: 49px;
 }
 
 @media (max-width: 375px) {
@@ -11060,9 +11061,9 @@ body {
   line-height: 19px;
   font-weight: 400;
   color: #F26376;
-  border-color: #F26376;
-  margin-top: 49px;
-  margin-bottom: 96px;
+  padding: 15px 39px 14px 39px;
+  text-decoration: none;
+  border: 1px solid #F26376;
 }
 
 .products__button:hover {
@@ -11074,6 +11075,7 @@ body {
   background-color: #222224;
   background-size: cover;
   text-align: center;
+  margin-top: 96px;
 }
 
 .information__list {
@@ -11282,7 +11284,7 @@ body {
 
 .subscribe__button {
   width: 100px;
-  height: 62px;
+  height: 49px;
   margin-left: -20px;
   font-size: 14px;
   font-weight: 400;
@@ -11603,7 +11605,6 @@ body {
   color: #F16D7F;
   text-transform: uppercase;
   padding-top: 59px;
-  margin-left: 230px;
 }
 
 .cart {
@@ -11614,7 +11615,6 @@ body {
 
 .cart__product {
   margin-top: 96px;
-  margin-left: 230px;
 }
 
 .cart__position {
@@ -11665,7 +11665,14 @@ body {
 .cart__position-item-close {
   fill: #575757;
   position: absolute;
-  margin: 28px 22px 260px 350px;
+}
+
+.cart__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  margin-bottom: 144px;
 }
 
 .cart__button {
@@ -11675,8 +11682,6 @@ body {
   font-weight: 300;
   text-transform: uppercase;
   padding: 17px 41px 16px 39px;
-  margin-top: 32px;
-  margin-bottom: 144px;
   background-color: #FFFFFF;
   white-space: nowrap;
 }
@@ -11692,7 +11697,6 @@ body {
   color: #222222;
   border: 1px solid;
   white-space: nowrap;
-  margin-right: 132px;
 }
 
 .form__cart {
@@ -11735,6 +11739,7 @@ body {
 .form__checkout {
   width: 360px;
   height: 214px;
+  flex-direction: column;
   background-color: #F5F3F3;
   margin-top: 58px;
 }
@@ -11774,7 +11779,7 @@ body {
   margin: 122px 43px 42px 44px;
 }
 
-.product {
+.commodity {
   max-width: 1600px;
   min-height: 148px;
   background-color: #F8F3F4;
@@ -11784,7 +11789,7 @@ body {
   align-items: center;
 }
 
-.product__title {
+.commodity__title {
   font-size: 24px;
   line-height: 29px;
   font-weight: 400;
@@ -11794,7 +11799,7 @@ body {
   padding-top: 59px;
 }
 
-.product__menu {
+.commodity__menu {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -11804,7 +11809,128 @@ body {
   white-space: nowrap;
 }
 
-.product__menu-pink {
+.commodity__menu-pink {
+  color: #F16D7F;
+}
+
+.commodity__characteristic {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.commodity__characteristic-text {
+  width: 48%;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  color: #5D5D5D;
+  margin-top: 48px;
+}
+
+.commodity__characteristic-pink {
+  color: #F16D7F;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 64px;
+  margin-left: 497px;
+}
+
+.commodity__characteristic-cheap {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-top: 27px;
+  margin-left: 442px;
+}
+
+.commodity__characteristic-price {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #F16D7F;
+  margin-top: 32px;
+  margin-left: 531px;
+}
+
+.commodity__characteristic-choose {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.commodity__characteristic-uppercase {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 130px;
+  padding-right: 42px;
+}
+
+.commodity__characteristic-button {
+  width: 211px;
+  height: 47px;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  color: #F16D7F;
+  background-color: #FFFFFF;
+  border: 1px solid #F16D7F;
+  margin-top: 49px;
+  margin-left: 464px;
+  margin-bottom: 65px;
+}
+
+.commodity__characteristic-icon {
+  fill: #F16D7F;
+}
+
+.description {
+  margin-top: 129px;
+}
+
+.description__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.description__wrapper {
+  top: 1576px;
+  width: 360px;
+  min-height: 420px;
+  margin-bottom: 128px;
+}
+
+.description__commodity {
+  background: #F8F8F8;
+  padding: 25px 29px 20px 17px;
+  text-align: left;
+}
+
+.description__title {
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.description__text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  color: #5D5D5D;
+}
+
+.description__price {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
   color: #F16D7F;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,96 @@
+.commodity {
+    max-width: 1600px;
+    min-height: 148px;
+    background-color: $light-pink-color;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__title {
+        @include font(24px, 29px, 400);
+        text-align: left;
+        color: $dark-pink-color;
+        text-transform: uppercase;
+        padding-top: 59px;
+    }
+
+    &__menu {
+        @include font(14px, 16px, 700);
+        color: $dark-grey-color;
+        text-transform: uppercase;
+        padding-top: 59px;
+        white-space: nowrap;
+
+        &-pink {
+            color: $dark-pink-color;
+        }
+    }
+
+
+    &__characteristic {
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        z-index: -1;
+
+        &-text {
+            width: 48%;
+            @include font(14px, 16px, 300);
+            color: $dark-grey-color;
+            margin-top: 48px;
+        }
+
+        &-pink {
+            color: $dark-pink-color;
+            @include font(14px, 16px, 300);
+            text-transform: uppercase;
+            margin-top: 64px;
+            margin-left: 497px;
+        }
+
+        &-cheap {
+            @include font(18px, 21px, 300);
+            text-transform: uppercase;
+            margin-top: 27px;
+            margin-left: 442px;
+        }
+
+        &-price {
+            @include font(24px, 28px, 300);
+            color: $dark-pink-color;
+            margin-top: 32px;
+            margin-left: 531px;
+        }
+
+        &-choose {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        &-uppercase {
+            @include font(14px, 16px, 400);
+            text-transform: uppercase;
+            margin-top: 130px;
+            padding-right: 42px;
+        }
+
+
+        &-button {
+            width: 211px;
+            height: 47px;
+            @include font(16px, 19px, 400);
+            color: $dark-pink-color;
+            background-color: $white-color;
+            border: 1px solid $dark-pink-color;
+            margin-top: 49px;
+            margin-left: 464px;
+            margin-bottom: 65px;
+        }
+
+        &-icon {
+            fill: $dark-pink-color;
+        }
+    }
+
+}
