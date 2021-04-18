@@ -20,16 +20,23 @@
         @include font(16px, 19px, 300);
         text-transform: uppercase;
         color: $dark-pink-color;
+        padding-left: 6px;
     }
 
-    &-link {
+    &-button {
         width: 273px;
         height: 50px;
         background-color: $dark-pink-color;
-        padding: 15px 43px 16px 41px;
-        text-decoration: none;
         color: $white-color;
         text-transform: uppercase;
-        margin: 122px 43px 42px 44px;
+        margin-top: 17px;
+        margin-left: 44px;
     }
+
+    .line__cart {
+        fill: $grey-soft-color;
+        margin-top: 21px;
+        margin-left: 44px;
+    }
+
 }

@@ -9,7 +9,7 @@
 
     &__position {
         display: flex;
-        justify-content: space-between;
+        justify-content: left;
         align-items: center;
         margin-bottom: 40px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
@@ -17,15 +17,25 @@
         &-description {
             width: 24%;
             height: 306px;
-            position: relative;
-            flex-direction: column;
+            margin-left: 31px;
         }
+
+        &-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
 
         &-title {
             width: 262px;
-            height: 68px;
             @include font(24px, 29px, 400);
             text-transform: uppercase;
+            margin-bottom: 42px;
+        }
+
+        &-close {
+            fill: $grey-soft-color;
         }
 
         &-list {
@@ -35,20 +45,14 @@
         &-item {
             width: 122px;
             @include font(22px, 26px, 400);
-            flex-wrap: nowrap;
 
             &-quantity {
                 width: 43px;
                 height: 24px;
             }
 
-            &-title-pink {
+            &-pink {
                 color: $dark-pink-color;
-            }
-
-            &-close {
-                fill: $grey-soft-color;
-                position: absolute;
             }
         }
     }

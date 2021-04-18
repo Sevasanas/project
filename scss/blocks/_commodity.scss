@@ -1,11 +1,11 @@
 .commodity {
-    max-width: 1600px;
     min-height: 148px;
     background-color: $light-pink-color;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
 
     &__title {
         @include font(24px, 29px, 400);
@@ -30,49 +30,73 @@
 
     &__characteristic {
         border: 1px solid rgba(0, 0, 0, 0.5);
-        z-index: -1;
+        z-index: 1;
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: -50px;
+        }
 
         &-text {
             width: 48%;
             @include font(14px, 16px, 300);
             color: $dark-grey-color;
-            margin-top: 48px;
         }
 
-        &-pink {
+        &-title {
             color: $dark-pink-color;
             @include font(14px, 16px, 300);
             text-transform: uppercase;
-            margin-top: 64px;
-            margin-left: 497px;
+            padding-top: 64px;
+            padding-bottom: 12px;
+        }
+
+        &-women {
+            fill: $dark-pink-color;
         }
 
         &-cheap {
             @include font(18px, 21px, 300);
             text-transform: uppercase;
-            margin-top: 27px;
-            margin-left: 442px;
+            padding-top: 12px;
+            padding-bottom: 48px;
+        }
+
+        &-text {
+            text-align: center;
         }
 
         &-price {
             @include font(24px, 28px, 300);
             color: $dark-pink-color;
-            margin-top: 32px;
-            margin-left: 531px;
+            padding-top: 32px;
+            padding-bottom: 65px;
+        }
+
+        &-line {
+            fill: $medium-grey-color;
         }
 
         &-choose {
             display: flex;
             justify-content: center;
             align-items: center;
-
+            padding-top: 65px;
+            padding-bottom: 49px;
         }
 
         &-uppercase {
             @include font(14px, 16px, 400);
             text-transform: uppercase;
-            margin-top: 130px;
-            padding-right: 42px;
+            padding-right: 9px;
+
+            &-icon {
+                fill: $grey-cold-color;
+                margin-right: 22px;
+            }
         }
 
 
@@ -84,7 +108,6 @@
             background-color: $white-color;
             border: 1px solid $dark-pink-color;
             margin-top: 49px;
-            margin-left: 464px;
             margin-bottom: 65px;
         }
 
@@ -92,5 +115,27 @@
             fill: $dark-pink-color;
         }
     }
+}
 
+.carousel {
+
+    .slide {
+        z-index: 1;
+    }
+
+    &-img {
+        background-color: $grey-color;
+        margin-left: 514px;
+    }
+
+    &-control-prev-icon,
+    &-control-next-icon {
+        background-color: $very-light-grey-color;
+        fill: $black-color;
+    }
+
+    &-control-prev-icon:hover,
+    &-control-next-icon:hover {
+        fill: $dark-pink-color;
+    }
 }
