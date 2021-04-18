@@ -31,6 +31,7 @@
     &__item {
         width: 360px;
         position: relative;
+        margin-bottom: 49px;
 
         @include min-mobile {
             width: 100%;
@@ -116,9 +117,9 @@
         height: 47px;
         @include font(16px, 19px, 400);
         color: $bright-pink-color;
-        border-color: $bright-pink-color;
-        margin-top: 49px;
-        margin-bottom: 96px;
+        padding: 15px 39px 14px 39px;
+        text-decoration: none;
+        border: 1px solid $bright-pink-color;
     }
 
     &__button:hover {

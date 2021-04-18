@@ -1,4 +1,5 @@
 @import './variables';
+@import './bootstrap';
 @import './mixins';
 @import './reset';
 @import './general';
@@ -16,3 +17,5 @@
 @import './blocks/cart';
 @import './blocks/form__cart';
 @import './blocks/form__checkout';
+@import './blocks/commodity';
+@import './blocks/description';

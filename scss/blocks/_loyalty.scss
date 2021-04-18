@@ -1,5 +1,4 @@
 .loyalty {
-    flex-grow: 1;
     margin-top: 64px;
     margin-bottom: 277px;
 
@@ -7,7 +6,7 @@
         @include font(24px, 29px, 300);
         text-align: left;
         text-transform: uppercase;
-        margin-left: 38px;
+        padding-bottom: 21px;
 
         @include tablet {
             @include font(16px, 19px, 300);
@@ -20,24 +19,25 @@
         list-style-type: none;
     }
 
-    &__item::before {
-        content: url(../img/punkt.svg);
-        padding-right: 24px;
-    }
 
     &__item {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: -16px;
+        padding-top: 17px;
     }
 
     &__text {
-        width: 49%;
         text-align: left;
+
 
         @include tablet {
             @include font(16px, 19px, 300);
         }
+    }
+
+    &__text::before {
+        content: url(../img/punkt.svg);
+        padding-right: 23px;
     }
 }
