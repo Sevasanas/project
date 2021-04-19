@@ -6,6 +6,11 @@
     justify-content: space-between;
     align-items: center;
 
+    @include mobile {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
 
     &__title {
         @include font(24px, 29px, 400);
@@ -86,6 +91,10 @@
             align-items: center;
             padding-top: 65px;
             padding-bottom: 49px;
+
+            @include mobile {
+                @include font(10px, 12px, 400);
+            }
         }
 
         &-uppercase {
@@ -125,7 +134,7 @@
 
     &-img {
         background-color: $grey-color;
-        margin-left: 514px;
+
     }
 
     &-control-prev-icon,

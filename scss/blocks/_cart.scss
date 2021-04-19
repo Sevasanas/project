@@ -3,8 +3,18 @@
     justify-content: space-between;
     align-items: center;
 
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @include mobile {
+        justify-content: center;
+    }
+
     &__product {
         margin-top: 96px;
+        margin-right: 129px;
     }
 
     &__position {
@@ -14,37 +24,57 @@
         margin-bottom: 40px;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 
+        @include mobile {
+            width: 100%;
+        }
+
         &-description {
-            width: 24%;
+            width: 40%;
             height: 306px;
             margin-left: 31px;
-        }
 
-        &-box {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
 
+        }
 
         &-title {
             width: 262px;
             @include font(24px, 29px, 400);
             text-transform: uppercase;
             margin-bottom: 42px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 22px;
+
+            @include mobile {
+                @include font(16px, 19px, 400);
+            }
         }
 
         &-close {
             fill: $grey-soft-color;
+            margin-right: 22px;
         }
 
-        &-list {
-            padding-bottom: 6px;
-        }
 
         &-item {
             width: 122px;
             @include font(22px, 26px, 400);
+
+            @include mobile {
+                @include font(14px, 16px, 400);
+            }
+
+            &-number {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                @include font(22px, 26px, 400);
+
+                @include mobile {
+                    @include font(14px, 16px, 400);
+                }
+            }
 
             &-quantity {
                 width: 43px;
@@ -72,6 +102,10 @@
         padding: 17px 41px 16px 39px;
         background-color: $white-color;
         white-space: nowrap;
+
+        @include mobile {
+            @include font(12px, 14px, 400);
+        }
     }
 
     &__link {
@@ -83,5 +117,9 @@
         color: $black-color;
         border: 1px solid;
         white-space: nowrap;
+
+        @include mobile {
+            @include font(12px, 14px, 400);
+        }
     }
 }

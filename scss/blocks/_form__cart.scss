@@ -1,10 +1,17 @@
 .form__cart {
-    flex-direction: column;
-    margin-left: 129px;
 
-    &-form {
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    @include mobile {
+        display: flex;
         flex-direction: column;
     }
+
+
 
     &-title {
         @include font(16px, 19px, 300);
@@ -28,5 +35,9 @@
         background-color: $white-color;
         white-space: nowrap;
         margin-top: 24px;
+
+        @include mobile {
+            text-transform: lowercase;
+        }
     }
 }

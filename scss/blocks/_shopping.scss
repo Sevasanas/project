@@ -9,5 +9,9 @@
         color: $dark-pink-color;
         text-transform: uppercase;
         padding-top: 59px;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 }

@@ -4,6 +4,10 @@
     background-color: $very-soft-grey-color;
     margin-top: 58px;
 
+    @include tablet {
+        margin-bottom: 147px;
+    }
+
     &-text {
         @include font(11px, 13px, 400);
         text-transform: uppercase;
