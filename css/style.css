@@ -11867,6 +11867,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 129px;
 }
 
 @media (max-width: 375px) {
