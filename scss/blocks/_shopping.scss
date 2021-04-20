@@ -1,5 +1,4 @@
 .shopping__cart {
-    max-width: 1600px;
     min-height: 148px;
     background-color: $light-pink-color;
     margin: 0 auto;
@@ -10,5 +9,9 @@
         color: $dark-pink-color;
         text-transform: uppercase;
         padding-top: 59px;
+
+        @include mobile {
+            text-align: center;
+        }
     }
 }

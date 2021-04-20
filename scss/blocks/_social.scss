@@ -58,28 +58,16 @@
         fill: $black-color;
     }
 
-    .facebook {
-        padding: 8px 9px 11px 11px;
-    }
-
-    .instagram {
-        padding: 9px 8px 8px 8px;
-    }
-
-    .pinterest {
-        padding: 8px 8px 9px 10px;
-    }
-
-    .twitter {
-        padding: 10px 10px 7px 8px;
-    }
-
     &__link {
         display: block;
         width: 32px;
         height: 32px;
         border: 2px solid white;
         background-color: white;
+        padding: 8px 11px 9px 11px;
+        padding: 9px 7px 8px 7px;
+        padding: 8px 9px 8px 10px;
+        padding: 9px 8px 9px 8px;
     }
 
     &__link:hover {
