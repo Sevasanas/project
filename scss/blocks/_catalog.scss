@@ -1,0 +1,29 @@
+.catalog {
+    min-height: 148px;
+    background-color: $light-pink-color;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+
+    &__title {
+        @include font(24px, 29px, 400);
+        text-align: left;
+        color: $dark-pink-color;
+        text-transform: uppercase;
+        padding-top: 59px;
+    }
+
+    &__menu {
+        @include font(14px, 16px, 700);
+        color: $dark-grey-color;
+        text-transform: uppercase;
+        padding-top: 59px;
+        white-space: nowrap;
+
+        &-pink {
+            color: $dark-pink-color;
+        }
+    }
+}

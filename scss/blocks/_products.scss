@@ -39,6 +39,27 @@
     }
 
     .product {
+
+        &__tablet {
+            @include tablet {
+                display: none;
+            }
+
+            @include mobile {
+                display: block;
+            }
+        }
+
+        &__mobile {
+            @include tablet {
+                display: block;
+            }
+
+            @include mobile {
+                display: none;
+            }
+        }
+
         &__wrapper {
             top: 1576px;
             width: 360px;

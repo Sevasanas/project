@@ -5,12 +5,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 129px;
+
 
     @include mobile {
-        justify-content: center;
-        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
+
 
 
     &__title {
@@ -35,15 +38,15 @@
 
 
     &__characteristic {
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        z-index: 1;
+        border: 1px solid $very-light-grey-color;
+        margin-top: -50px;
+        margin-bottom: 129px;
 
         &-list {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin-top: -50px;
         }
 
         &-text {
@@ -128,14 +131,12 @@
 }
 
 .carousel {
-
-    .slide {
+    &-control-prev {
         z-index: 1;
     }
 
     &-img {
         background-color: $grey-color;
-
     }
 
     &-control-prev-icon,
