@@ -6,6 +6,12 @@
         display: none;
     }
 
+    &__title {
+        @include font(14px, 16px, 700);
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
     &__container {
         display: flex;
         justify-content: space-between;
@@ -67,6 +73,26 @@
 
     &__button-icon {
         fill: $grey-light-color;
+    }
+
+    &__sub-title {
+        @include font(14px, 16px, 400);
+        color: $dark-pink-color;
+        text-transform: uppercase;
+        padding-left: 5px;
+        margin-top: 12px;
+    }
+
+    &__sub-navigation-list {
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    &__sub-navigation-link {
+        text-decoration: none;
+        @include font(14px, 16px, 400);
+        color: $grey-cold-color;
+        margin-bottom: 11px;
     }
 
     @media (max-width: 768px) {

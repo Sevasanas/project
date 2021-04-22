@@ -30,22 +30,26 @@
 
     &__item--woman {
         background-image: url(../img/woman-30.jpg);
+        background-color: $grey-cold-color;
         background-size: cover;
 
     }
 
     &__item--man {
         background-image: url(../img/man-30.jpg);
+        background-color: $grey-cold-color;
         background-size: cover;
     }
 
     &__item--kids {
         background-image: url(../img/kids-30.jpg);
+        background-color: $grey-cold-color;
         background-size: cover;
     }
 
     &__item--accesories {
         background-image: url(../img/accesories.jpg);
+        background-color: $grey-cold-color;
         background-size: cover;
         width: 100%;
 

@@ -22,6 +22,7 @@
         flex-wrap: wrap;
         list-style-type: none;
 
+
         @include mobile {
             flex-direction: column;
             align-items: center;
@@ -32,6 +33,10 @@
         width: 360px;
         position: relative;
         margin-bottom: 49px;
+
+        @include tablet {
+            width: 46%;
+        }
 
         @include min-mobile {
             width: 100%;

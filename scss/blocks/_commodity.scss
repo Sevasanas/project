@@ -6,16 +6,6 @@
     justify-content: space-between;
     align-items: center;
 
-
-    @include mobile {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-
-
     &__title {
         @include font(24px, 29px, 400);
         text-align: left;
@@ -36,6 +26,9 @@
         }
     }
 
+    &__lattice {
+        margin-bottom: 120px;
+    }
 
     &__characteristic {
         border: 1px solid $very-light-grey-color;
@@ -127,26 +120,5 @@
         &-icon {
             fill: $dark-pink-color;
         }
-    }
-}
-
-.carousel {
-    &-control-prev {
-        z-index: 1;
-    }
-
-    &-img {
-        background-color: $grey-color;
-    }
-
-    &-control-prev-icon,
-    &-control-next-icon {
-        background-color: $very-light-grey-color;
-        fill: $black-color;
-    }
-
-    &-control-prev-icon:hover,
-    &-control-next-icon:hover {
-        fill: $dark-pink-color;
     }
 }

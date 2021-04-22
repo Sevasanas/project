@@ -41,6 +41,16 @@
                 display: block;
             }
         }
+
+        &-mobile {
+            @include tablet {
+                display: block;
+            }
+
+            @include mobile {
+                display: none;
+            }
+        }
     }
 
     &__img {
