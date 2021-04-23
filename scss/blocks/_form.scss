@@ -13,6 +13,8 @@
     }
 
     &__list {
+        display: flex;
+        flex-direction: column;
         border: none;
 
     }
@@ -25,7 +27,7 @@
     }
 
     &__field {
-        width: 36%;
+        width: 359px;
         height: 44px;
         top: 327px;
         font-size: 13px;
@@ -33,7 +35,6 @@
         line-height: 16px;
         text-align: left;
         color: $medium-grey-color;
-        padding: 13px 274px 16px 17px;
         margin-bottom: 21px;
 
         @include mobile {
@@ -87,16 +88,16 @@
     &__link {
         width: 167px;
         height: 50px;
+        @include font(14px, 16px, 400);
         color: white;
+        text-align: center;
         background-color: $dark-pink-color;
         text-transform: uppercase;
-        padding: 16px 66px 17px 29px;
         text-decoration: none;
+        padding-top: 16px;
     }
 
     &__link-icon {
         fill: $white-color;
-        align-self: center;
-        padding-left: 20px;
     }
 }

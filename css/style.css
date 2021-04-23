@@ -11505,6 +11505,8 @@ input::placeholder {
 }
 
 .form__list {
+  display: flex;
+  flex-direction: column;
   border: none;
 }
 
@@ -11518,7 +11520,7 @@ input::placeholder {
 }
 
 .form__field {
-  width: 36%;
+  width: 359px;
   height: 44px;
   top: 327px;
   font-size: 13px;
@@ -11526,7 +11528,6 @@ input::placeholder {
   line-height: 16px;
   text-align: left;
   color: #B1B1B1;
-  padding: 13px 274px 16px 17px;
   margin-bottom: 21px;
 }
 
@@ -11582,22 +11583,31 @@ input::placeholder {
 .form__link {
   width: 167px;
   height: 50px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
   color: white;
+  text-align: center;
   background-color: #F16D7F;
   text-transform: uppercase;
-  padding: 16px 66px 17px 29px;
   text-decoration: none;
+  padding-top: 16px;
 }
 
 .form__link-icon {
   fill: #FFFFFF;
-  align-self: center;
-  padding-left: 20px;
 }
 
 .loyalty {
+  width: 40%;
   margin-top: 64px;
   margin-bottom: 277px;
+}
+
+@media (max-width: 375px) {
+  .loyalty {
+    width: 100%;
+  }
 }
 
 .loyalty__title {
@@ -11610,6 +11620,14 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
+  .loyalty__title {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 375px) {
   .loyalty__title {
     font-size: 16px;
     line-height: 19px;
@@ -11637,6 +11655,14 @@ input::placeholder {
 }
 
 @media (max-width: 768px) {
+  .loyalty__text {
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 300;
+  }
+}
+
+@media (max-width: 375px) {
   .loyalty__text {
     font-size: 16px;
     line-height: 19px;
@@ -11878,9 +11904,8 @@ input::placeholder {
 }
 
 .form__cart-field {
-  width: 22%;
+  width: 359px;
   height: 45px;
-  padding: 12px 277px 16px 17px;
   margin-bottom: 21px;
 }
 
