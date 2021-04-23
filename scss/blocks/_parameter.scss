@@ -1,0 +1,77 @@
+.parameter {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 65px;
+
+    @include tablet {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    @include mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+
+    &__button {
+        @include font(14px, 16px, 400);
+        text-transform: uppercase;
+        color: $grey-cold-color;
+        border: none;
+        background: transparent;
+
+        @include mobile {
+            @include font(12px, 14px, 400);
+        }
+    }
+
+    &__size {
+        @include font(14px, 16px, 400);
+        text-transform: uppercase;
+        color: $grey-cold-color;
+        border: none;
+        background: transparent;
+
+        @include mobile {
+            @include font(12px, 14px, 400);
+        }
+
+        &:hover+.parameter__size-navigation {
+            display: block;
+        }
+
+        &-navigation {
+            background-color: $white-color;
+            position: absolute;
+            display: none;
+        }
+
+        &-text {
+            @include font(14px, 16px, 400);
+            text-transform: uppercase;
+            color: $grey-cold-color;
+            padding-bottom: 6px;
+            text-align: left;
+
+
+            &::before {
+                display: block;
+                width: 12px;
+                height: 12px;
+                border: 1px solid $grey-cold-color;
+                background: transparent;
+            }
+        }
+    }
+
+    &__img {
+        margin-top: 48px;
+        margin-bottom: 96px;
+    }
+}

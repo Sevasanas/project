@@ -11,7 +11,10 @@
         flex-direction: column;
     }
 
-
+    &-form {
+        display: flex;
+        flex-direction: column;
+    }
 
     &-title {
         @include font(16px, 19px, 300);
@@ -20,9 +23,8 @@
     }
 
     &-field {
-        width: 22%;
+        width: 359px;
         height: 45px;
-        padding: 12px 277px 16px 17px;
         margin-bottom: 21px;
     }
 
@@ -37,7 +39,7 @@
         margin-top: 24px;
 
         @include mobile {
-            text-transform: lowercase;
+            text-transform: capitalize;
         }
     }
 }

@@ -14,7 +14,10 @@
 
     &__product {
         margin-top: 96px;
-        margin-right: 129px;
+
+        @include mobile {
+            width: 100%;
+        }
     }
 
     &__position {
@@ -28,11 +31,16 @@
             width: 100%;
         }
 
+        &-img {
+            @include mobile {
+                width: 69%;
+            }
+
+        }
+
         &-description {
             width: 40%;
             height: 306px;
-            margin-left: 31px;
-
 
         }
 
@@ -47,6 +55,7 @@
             padding-top: 22px;
 
             @include mobile {
+                width: 69%;
                 @include font(16px, 19px, 400);
             }
         }
@@ -54,6 +63,10 @@
         &-close {
             fill: $grey-soft-color;
             margin-right: 22px;
+
+            @include mobile {
+                margin-right: 0;
+            }
         }
 
 
@@ -99,11 +112,12 @@
         width: 41%;
         @include font(14px, 17px, 300);
         text-transform: uppercase;
+        text-align: center;
         padding: 17px 41px 16px 39px;
         background-color: $white-color;
-        white-space: nowrap;
 
         @include mobile {
+            text-transform: capitalize;
             @include font(12px, 14px, 400);
         }
     }
@@ -113,12 +127,13 @@
         @include font(14px, 17px, 300);
         text-transform: uppercase;
         padding: 17px 41px 16px 39px;
+        text-align: center;
         text-decoration: none;
         color: $black-color;
         border: 1px solid;
-        white-space: nowrap;
 
         @include mobile {
+            text-transform: capitalize;
             @include font(12px, 14px, 400);
         }
     }

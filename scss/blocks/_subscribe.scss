@@ -32,7 +32,7 @@
     }
 
     &__img {
-        border-radius: 90%;
+        border-radius: 60%;
         margin-top: 87px;
 
         @include tablet {
@@ -113,6 +113,7 @@
         @include mobile {
             width: 98%;
             height: 46px;
+            @include font(12px, 16px, 400);
             padding: 6px 61px 6px 21px;
         }
     }
@@ -132,7 +133,7 @@
 
         @include mobile {
             width: 93%;
-            height: 49px;
+            height: 46px;
             padding: 7px 7px 6px 8px;
         }
     }

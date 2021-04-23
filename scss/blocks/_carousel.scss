@@ -1,0 +1,33 @@
+.carousel {
+    &-control-prev {
+        z-index: 1;
+    }
+
+    &-img {
+        width: 37%;
+        display: block;
+        margin: 0 auto;
+        background-color: $grey-color;
+
+        @include tablet {
+            width: 100%;
+            min-height: 565px;
+        }
+
+        @include mobile {
+            width: 100%;
+            min-height: 454px;
+        }
+    }
+
+    &-control-prev-icon,
+    &-control-next-icon {
+        background-color: $very-light-grey-color;
+        fill: $black-color;
+    }
+
+    &-control-prev-icon:hover,
+    &-control-next-icon:hover {
+        fill: $dark-pink-color;
+    }
+}
